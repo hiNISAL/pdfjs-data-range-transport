@@ -1,7 +1,13 @@
 {
   "name": "pdfjs-data-range-transport",
   "version": "1.0.0",
-  "description": "",
+  "description": "Implementation of the PDFDataRangeTransport in PDF.js",
+  "keywords": [
+    "pdfjs",
+    "pdf",
+    "range",
+    "PDFDataRangeTransport"
+  ],
   "type": "module",
   "main": "dist/index.umd.js",
   "jsnext:main": "dist/index.js",
@@ -23,7 +29,6 @@
     "type": "git",
     "url": "git+https://github.com/hiNISAL/pdfjs-data-range-transport.git"
   },
-  "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
