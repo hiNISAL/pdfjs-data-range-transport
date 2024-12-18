@@ -1,0 +1,39 @@
+{
+  "name": "pdfjs-data-range-transport",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.umd.js",
+  "jsnext:main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/.umd.js"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build:umd && npm run build:es",
+    "build:es": "npx tsc",
+    "build:umd": "swc ./src/index.ts -o ./dist/index.umd.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiNISAL/pdfjs-data-range-transport.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hiNISAL/pdfjs-data-range-transport/issues"
+  },
+  "homepage": "https://github.com/hiNISAL/pdfjs-data-range-transport#readme",
+  "devDependencies": {
+    "@swc/cli": "^0.5.2",
+    "@swc/core": "^1.10.1",
+    "pdfjs-dist": "^4.9.155",
+    "typescript": "^5.7.2"
+  }
+}
